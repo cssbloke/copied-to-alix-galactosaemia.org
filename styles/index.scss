@@ -1,0 +1,54 @@
+@import 'normalize', 'mixins', 'variables', 'primary-navigation', 'footer', 'alert';
+
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.visuallyHidden {
+  display: none;
+}
+
+/* homepage */
+
+.heroPost {
+  margin-top: -20px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .heroText {
+    position: absolute;
+
+    @include padding;
+
+    bottom: 60px;
+    left: 0;
+    right: 40px;
+
+    h1, p, a {
+      color: $generic3;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 0 0 .4em;
+    }
+
+    p {
+      font-size: 2.5rem;
+      max-width: 45vw;
+      margin: 0;
+    }
+  }
+}
+
+.homepageContent {
+  @include padding;
+
+  h2 {
+    margin-top: 0;
+  }
+}
